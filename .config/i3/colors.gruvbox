@@ -1,0 +1,8 @@
+# Gruvbox Theme
+client.focused          #458588 #458588 #e3e3e3 #458588   #458588
+client.focused_inactive #282828 #282828 #e3e3e3 #282828   #282828
+client.unfocused        #1d2021 #1d2021 #ebdbb2 #1d2021   #1d2021
+client.urgent           #282828 #fb4934 #e3e3e3 #fb4934   #fb4934
+client.placeholder      #1d2021 #1d2021 #e3e3e3 #1d2021   #1d2021
+
+client.background       #e3e3e3

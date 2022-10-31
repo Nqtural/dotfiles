@@ -1,0 +1,74 @@
+window:
+  padding:
+    x: 20
+    y: 20
+
+  opacity: 0.8
+
+font:
+  normal:
+    style: Regular
+    #family: FiraCode Nerd Font Mono
+    #family: Jetbrains Mono
+    #family: DejaVu Sans Mono
+    family: Source Code Pro
+  size: 10
+
+cursor:
+  style:
+    # Available: Beam, Block, Underline
+    shape: Beam
+    blinking: On
+    blink-interval: 450
+
+# Gruvbox Color Scheme
+colors:
+  primary:
+    background: '#1d2021'
+    foreground: '#ebdbb2'
+    bright_foreground: '#e3e3e3'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#282828'
+      background: '#98971a'
+    focused_match:
+      foreground: '#282828'
+      background: '#d65d0e'
+    bar:
+      background: '#282828'
+      foreground: '#e3e3e3'
+  hints:
+    start:
+      foreground: '#282828'
+      background: '#fabd2f'
+    end:
+      foreground: '#fabd2f'
+      background: '#282828'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#282828'
+  normal:
+    black: '#1d2021'
+    red: '#cc241d'
+    green: '#98971a'
+    yellow: '#d79921'
+    blue: '#458588'
+    magenta: '#b16286'
+    cyan: '#689d6a'
+    white: '#ebdbb2'
+  bright:
+    black: '#3c3836'
+    red: '#fb4934'
+    green: '#b8bb26'
+    yellow: '#fabd2f'
+    blue: '#83a598'
+    magenta: '#d3869b'

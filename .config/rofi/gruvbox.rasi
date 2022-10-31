@@ -1,0 +1,17 @@
+* {
+    /* Gruvbox theme color palette: */
+    color-bgd: #282828;
+    color-cur: #3c3836;
+    color-fgd: #ebdbb2;
+    color-cmt: #1d2021;
+    color-cya: #689d6a;
+    color-grn: #98971a;
+    color-ora: #d65d0e;
+    color-pnk: #d3869b;
+    color-pur: #b16286;
+    color-red: #fb4934;
+    color-yel: #fabd2f;
+    color-bor: #689d6a;
+
+    font: "Jetbrains Mono 12";
+}

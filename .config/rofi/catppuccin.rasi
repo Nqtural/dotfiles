@@ -1,0 +1,17 @@
+* {
+    /* Catppuccin theme color palette: */
+    color-bgd: #1e1e2e;
+    color-cur: #313244;
+    color-fgd: #cdd6f4;
+    color-cmt: #181825;
+    color-cya: #94e2d5;
+    color-grn: #a6e3a1;
+    color-ora: #fab387;
+    color-pnk: #f5c2e7;
+    color-pur: #cba6f7;
+    color-red: #f38ba8;
+    color-yel: #f9e2af;
+    color-bor: #5f5faf;
+
+    font: "Jetbrains Mono 12";
+}

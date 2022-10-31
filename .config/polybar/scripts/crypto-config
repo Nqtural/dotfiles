@@ -1,0 +1,9 @@
+[general]
+base_currency = USD
+display = price
+
+[monero]
+icon = XMR
+
+[ethereum]
+icon = ETH

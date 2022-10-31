@@ -1,0 +1,76 @@
+window:
+  padding:
+    x: 20
+    y: 20
+
+  opacity: 0.8
+
+font:
+  normal:
+    style: Regular
+    family: FiraCode Nerd Font Mono
+    #family: Jetbrains Mono
+    #family: DejaVu Sans Mono
+    #family: Source Code Pro
+  size: 10
+
+cursor:
+  style:
+    # Available: Beam, Block, Underline
+    shape: Underline
+    Binking: Off
+    blink-interval: 450
+
+# Catppuccin Color Scheme
+colors:
+  primary:
+    background: '#1e1e2e'
+    foreground: '#bac2de'
+    bright_foreground: '#cdd6f4'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#313244'
+      background: '#a6e3a1'
+    focused_match:
+      foreground: '#313244'
+      background: '#89b4fa'
+    bar:
+      background: '#313244'
+      foreground: '#89b4fa'
+  hints:
+    start:
+      foreground: '#313244'
+      background: '#f38ba8'
+    end:
+      foreground: '#f38ba8'
+      background: '#313244'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#585b70'
+  normal:
+    black: '#45475a'
+    red: '#f38ba8'
+    green: '#a6e3a1'
+    yellow: '#f9e2af'
+    blue: '#89b4fa'
+    magenta: '#f5c2e7'
+    cyan: '#94e2d5'
+    white: '#bac2de'
+  bright:
+    black: '#585b70'
+    red: '#f38ba8'
+    green: '#a6e3a1'
+    yellow: '#f9e2af'
+    blue: '#89b4fa'
+    magenta: '#f5c2e7'
+    cyan: '#94e2d5'
+    white: '#a6adc8'

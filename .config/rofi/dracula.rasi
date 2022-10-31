@@ -1,0 +1,15 @@
+* {
+    /* Dracula theme colour palette: */
+    color-bgd: #282a36;
+    color-cur: #44475a;
+    color-fgd: #f8f8f2;
+    color-cmt: #6272a4;
+    color-cya: #8be9fd;
+    color-grn: #50fa7b;
+    color-ora: #ffb86c;
+    color-pnk: #ff79c6;
+    color-pur: #bd93f9;
+    color-red: #ff5555;
+    color-yel: #f1fa8c;
+    color-bor: #6272a4;
+}
