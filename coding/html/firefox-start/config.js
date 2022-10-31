@@ -73,7 +73,7 @@ const CONFIG = {
             id: '6',
             name: 'Arch Linux Wiki',
             icon: 'book',
-            link: '',
+            link: 'https://wiki.archlinux.org/',
         },
     ],
 
