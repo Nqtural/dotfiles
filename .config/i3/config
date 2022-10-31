@@ -36,7 +36,9 @@ exec_always --no-startup-id xset -dpms
 exec_always --no-startup-id xset s noblank
 exec_always --no-startup-id xinput set-prop 9 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
 
-exec_always spotifyd -u robinstalstad -p 49e7e9cbb2b0e59eb04ff8b332f6254e82d125af4fe5db291bad31d63e38abfa
+# To start spotifyd daemon, add your username on line 1 and password on line 2 in a file
+# called spotify info in the same path as this one and restart the i3
+exec_always spotifyd -u $(sed -n 1p $HOME/.config/i3/spotify-info) -p $(sed -n 2p $HOME/.config/i3/spotify-info)
 
 # Keybindings
 bindsym $mod+o exec "alacritty -o colors.primary.background=\'#000000\' -o window.opacity=0.6 --class PyOverlay --command python3 /home/nqtural/Coding/python/PyOverlay/PyOverlay.py"
