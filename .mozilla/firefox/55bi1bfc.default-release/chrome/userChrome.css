@@ -131,6 +131,7 @@ by Miguel Avila
   padding-left: 0 !important;
 }
 
+/* URL bar */
 /* Hide "Firefox view" */
 #firefox-view-button {
   display: none;
@@ -142,12 +143,30 @@ by Miguel Avila
   padding: 0 !important;
 }
 
+/* Hide statuspanel label (box in lower left corner when hovering over link) */
+#statuspanel-label {
+  display: none;
+}
+
+/* Hide reader view (can be toggled with Ctrl+Alt+R) */
+#page-action-buttons {
+  display: none;
+}
+
+/* Hide identity box */
+#identity-box {
+  display: none;
+}
+
 /* Hide "List all tabs button */
 #alltabs-button {
   display: none;
 }
 
-/* Url Bar  */
+#urlbar-go-button {
+  display: none;
+}
+
 #urlbar-input-container {
   background-color: var(--sfsecondary) !important;
   border: 1px solid rgba(0, 0, 0, 0) !important;
@@ -218,4 +237,19 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 #context_selectAllTabs,
 #context_closeTabOptions {
   display: none !important;
+}
+
+/*
+
+┌─┐┌─┐┌─┐┬┌┬┐┬┌─┐┌┐┌
+├─┘│ │└─┐│ │ ││ ││││
+┴  └─┘└─┘┴ ┴ ┴└─┘┘└┘
+┬┌┬┐┌─┐┌┬┐┌─┐
+│ │ ├┤ │││└─┐
+┴ ┴ └─┘┴ ┴└─┘
+
+*/
+
+#urlbar-input {
+  text-align: center !important;
 }
