@@ -139,7 +139,7 @@ alias pyoverlay="python3 ~/coding/python/PyOverlay/PyOverlay.py"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Add rust binaries to path
-export PATH="$PATH:$HOME/.local/share/cargo/bin"1
+export PATH="$PATH:$HOME/.local/share/cargo/bin"
 
 # Autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
