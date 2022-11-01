@@ -5,13 +5,18 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
+// =============================================================================================
+// ========================================= IMPORTANT =========================================
+// =============================================================================================
+// Enter your information below and configure as you like, then rename this file to 'config.js'
+
 const CONFIG = {
     // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
     // ├┴┐├─┤└─┐││  └─┐
     // └─┘┴ ┴└─┘┴└─┘└─┘
 
     // General
-    name: 'Nqtural',
+    name: 'YourName',
     imageBackground: false,
     openInNewTab: true,
     twelveHourFormat: false,
@@ -22,17 +27,14 @@ const CONFIG = {
     greetingEvening: 'Good evening,',
     greetingNight: 'Good night,',
 
-    // Layout
-    bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
-
     // Weather
-    weatherKey: '4699e17c4d6b50d0f84272714dcdaba2', // Write here your API Key
+    weatherKey: 'apikey', // Write your API key here (Get it from https://openweathermap.org/)
     weatherUnit: 'C', // 'F', 'C'
     language: 'en', // More languages in https://openweathermap.org/current#multi
 
-    trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
-    defaultLatitude: '58.1603741',
-    defaultLongitude: '11.692778',
+    trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
+    defaultLatitude: '0',
+    defaultLongitude: '0',
 
     // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
     // ├┴┐│ │ │  │ │ ││││└─┐
@@ -43,7 +45,7 @@ const CONFIG = {
             id: '1',
             name: 'Github',
             icon: 'github',
-            link: 'https://github.com/nqtural',
+            link: 'https://github.com/',
         },
         {
             id: '2',
