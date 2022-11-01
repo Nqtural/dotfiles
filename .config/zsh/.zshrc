@@ -125,9 +125,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ralgs="python3 ~/coding/python/ralgs/main.py"
 alias passphrase="python3 ~/coding/python/passphrase-generator/main-py"
 alias l="exa --icons --no-time --no-user -al"
@@ -140,6 +137,9 @@ alias pyoverlay="python3 ~/coding/python/PyOverlay/PyOverlay.py"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add rust binaries to path
+export PATH="$PATH:$HOME/.local/share/cargo/bin"1
 
 # Autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
