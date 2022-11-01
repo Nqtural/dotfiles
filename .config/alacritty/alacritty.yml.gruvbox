@@ -11,7 +11,8 @@ font:
     #family: FiraCode Nerd Font Mono
     #family: Jetbrains Mono
     #family: DejaVu Sans Mono
-    family: Source Code Pro
+    #family: Source Code Pro
+    family: CaskaydiaCove Nerd Font Mono
   size: 10
 
 cursor:
