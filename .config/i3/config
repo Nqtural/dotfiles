@@ -23,10 +23,10 @@ for_window [class="PyOverlay"] move position 12px 46px
 #for_window [class="PyOverlay"] move position 1124px 596px
 
 # Colors
-include colors.dracula
+include colors.gruvbox
 
 # starting services
-exec_always --no-startup-id feh --bg-fill --no-fehbg $HOME/Pictures/wallpapers/dracula-arch.png
+exec_always --no-startup-id feh --bg-fill --no-fehbg $HOME/Pictures/wallpapers/gruvbox.png
 exec_always --no-startup-id picom --vsync
 exec_always --no-startup-id xinput set-prop 'Glorious Model O Wireless' 'libinput Accel Speed' -1
 exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 144.00

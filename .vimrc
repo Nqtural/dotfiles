@@ -92,11 +92,6 @@ if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
-" Colorscheme
-packadd! dracula
-colorscheme dracula
-hi Normal guibg=NONE ctermbg=NONE
-
 " XDG
 set runtimepath^=$XDG_CONFIG_HOME/vim
 set runtimepath+=$XDG_DATA_HOME/vim

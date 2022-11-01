@@ -1,10 +1,244 @@
 /**
- * @name Dracula Theme
- * @author Kabir Kwatra
- * @authorId 168376512272269313
- * @version 1.0.0
- * @description 🧛🏻‍♂️ Dark theme for all the things
- * @source https://github.com/Dracula/BetterDiscord
+ * @name Catppuccin
+ * @version 0.2.0
+ * @description Catppuccin Mocha
+ * @author winston#0001
+ * @authorId 505490445468696576
+ * @source https://github.com/catppuccin/discord
+ * @invite r6Mdz5dpFc
 **/
 
-@import url("https://dracula.github.io/betterdiscord/base.css")
+:root {
+  /* Catppuccin Base Colors */
+  --catppuccin-background: #1E1E2E !important;
+  --catppuccin-current-line: #6c7086 !important;
+  --catppuccin-selection: #7f849c !important;
+  --catppuccin-foreground: #CDD6F4 !important;
+  --catppuccin-comment: #585b70 !important;
+  --catppuccin-cyan: #74c7ec !important;
+  --catppuccin-green: #a6e3a1 !important;
+  --catppuccin-orange: #fab387 !important;
+  --catppuccin-pink: ##f5c2e7 !important;
+  --catppuccin-purple: #cba6f7 !important;
+  --catppuccin-red: #f38ba8 !important;
+  --catppuccin-yellow: #f9e2af !important;
+  /* Catppuccin ANSI Colors */
+  --catppuccin-color0: #45475A !important;
+  --catppuccin-color1: #F38BA8 !important;
+  --catppuccin-color2: #A6E3A1 !important;
+  --catppuccin-color3: #F9E2AF !important;
+  --catppuccin-color4: #89B4FA !important;
+  --catppuccin-color5: #F5C2E7 !important;
+  --catppuccin-color6: #94E2D5 !important;
+  --catppuccin-color7: #BAC2DE !important;
+  --catppuccin-color8: #585B70 !important;
+  --catppuccin-color9: #F38BA8 !important;
+  --catppuccin-color10: #A6E3A1 !important;
+  --catppuccin-color11: #F9E2AF !important;
+  --catppuccin-color12: #89B4FA !important;
+  --catppuccin-color13: #F5C2E7 !important;
+  --catppuccin-color14: #94E2D5 !important;
+  --catppuccin-color15: #A6ADC8 !important;
+  /* catppuccin Other Colors */
+  --catppuccin-line-highlight: #585B7075 !important;
+  --catppuccin-non-text: #585B701a !important;
+  --catppuccin-white: #CDD6F4 !important;
+  --catppuccin-tab-drop-background: #585B7070 !important;
+  --catppuccin-background-lighter: #585B70;
+  --catppuccin-background-alt: #45475A !important;
+
+  /* Discord Root Colors */
+  --header-primary: var(--catppuccin-foreground) !important;
+  --background-primary: var(--catppuccin-background) !important;
+  --background-secondary: var(--catppuccin-background) !important;
+  --background-mobile-primary: var(--catppuccin-background) !important;
+  --background-mobile-secondary: var(--catppuccin-background) !important;
+  --background-secondary-alt: var(--catppuccin-background) !important;
+  --background-tertiary: var(--catppuccin-background-alt) !important;
+  --background-accent: var(--catppuccin-current-line) !important;
+  --background-floating: var(--catppuccin-background) !important;
+  --background-modifier-selected: var(--catppuccin-current-line) !important;
+  --activity-card-background: var(--catppuccin-background) !important;
+  --interactive-normal: var(--catppuccin-foreground) !important;
+  --channeltextarea-background: var(--catppuccin-selection) !important;
+  --rs-online-color: var(--catppuccin-green) !important;
+  --rs-idle-color: var(--catppuccin-orange) !important;
+  --rs-dnd-color: var(--catppuccin-red) !important;
+  --rs-offline-color: var(--catppuccin-selection) !important;
+  --rs-streaming-color: var(--catppuccin-purple) !important;
+  --rs-invisible-color: var(--catppuccin-comment) !important;
+  --interactive-muted: var(--catppuccin-comment) !important;
+  --scrollbar-auto-thumb: var(--catppuccin-comment) !important;
+  --scrollbar-auto-track: var(--catppuccin-background-alt) !important;
+  --scrollbar-thin-thumb: var(--catppuccin-comment) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--catppuccin-comment) !important;
+  --scrollbar-auto-scrollbar-color-track: var(
+    --catppuccin-background-alt
+  ) !important;
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  background-color: var(--catppuccin-comment) !important;
+}
+
+/* Home */
+.container-2cd8Mz {
+  background-color: var(--catppuccin-background) !important;
+}
+
+/* Autocomplete popup */
+.autocomplete-3NRXG8 {
+  background-color: var(--catppuccin-background) !important;
+}
+
+.autocomplete-3jLKbj {
+  background-color: var(--catppuccin-background) !important;
+}
+
+/* Autocomplete popup selection */
+.selected-3H3-RC {
+  background-color: var(--catppuccin-selection) !important;
+}
+
+/* Friends Menu Header */
+.container-ZMc96U.themed-Hp1KC_{
+  background-color: var(--catppuccin-background) !important;
+}
+
+/* Emoji/Gif Selector Box*/
+.contentWrapper-3vHNP2,
+.container-3u7RcY,
+.wrapper-1NNaWG,
+.wrapper-1NNaWG,
+.inspector-DFKXwB,
+.wrapper-22rqw6,
+.listWrapper-2nHLP8,
+.categoryItem-1sHzUv,
+.guildIcon-2SUGiq,
+.header-11eigE{
+  background-color: var(--catppuccin-background) !important;
+}
+.container-1SX9VC,
+.container-2oNtJn{
+  background-color: var(--catppuccin-selection) !important;
+}
+
+/* Scroll Bar */
+.theme-dark
+  .scrollerThemed-2oenus.themedWithTrack-q8E3vB
+  .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+  background-color: var(--catppuccin-selection) !important;
+  border: 4px solid var(--catppuccin-background) !important;
+  border-radius: 8px !important;
+}
+/* Outlines */
+.scroller-kQBbkU,
+.form-3gdLxP,
+.members-3WRCEx,
+.scroller-1ox3I2,
+.panels-3wFtMD,
+.scroller-3X7KbA,
+.container-ZMc96U.themed-Hp1KC_,
+.header-3OsQeK,
+.searchBar-zdmu7v,
+.scroller-2LSbBU,
+.searchBar-3TnChZ,
+.peopleColumn-1wMU14,
+.container-3u6dG-,
+.scroller-9moviB,
+.nowPlayingColumn-1eCBCN,
+.header-2V-4Sw,
+.contentRegion-3HkfJJ {
+  border-color: var(--catppuccin-current-line) !important;
+  border-style: solid !important;
+}
+
+/* Settings Content Pane */
+.contentRegion-3HkfJJ {
+  border-width: 0 0 0 1px !important;
+}
+/* Chat */
+.scroller-kQBbkU {
+  border-width: 1px 1px 0 1px !important;
+}
+/* Message Box */
+.form-3gdLxP {
+  border-width: 0 1px 1px !important;
+}
+/* Member List */
+.members-3WRCEx {
+  border-width: 1px 1px 1px 0 !important;
+}
+/* Channel List */
+.scroller-1ox3I2 {
+  border-width: 1px 0 0 0 !important;
+}
+/* User Area */
+.panels-3wFtMD {
+  border-width: 1px 0 1px 0 !important;
+}
+/* Guild List */
+.scroller-3X7KbA {
+  border-width: 1px !important;
+}
+/* Channel Header */
+.container-ZMc96U.themed-Hp1KC_ {
+  border-width: 1px 1px 0 0 !important;
+}
+/* Guild Header */
+.header-3OsQeK {
+  border-width: 1px 0 0 0 !important;
+}
+/* Search Bar */
+.searchBar-zdmu7v {
+  border-width: 1px !important;
+}
+.searchBar-3TnChZ {
+  border-width: 1px 0 0 0 !important;
+}
+/* People, Game Library, Nitro */
+.peopleColumn-1wMU14,
+.container-3u6dG-,
+.scroller-9moviB {
+  border-width: 1px !important;
+}
+/* Now Playing Column */
+.nowPlayingColumn-1eCBCN {
+  border-width: 1px 1px 1px 0 !important;
+}
+
+/* Syntax Highlighing in Code Blocks*/
+code {
+  color: var(--catppuccin-foreground) !important;
+}
+span.hljs-built_in {
+  color: var(--catppuccin-purple) !important;
+}
+span.hljs-keyword {
+  color: var(--catppuccin-pink) !important;
+}
+span.hljs-title {
+  color: var(--catppuccin-cyan) !important;
+}
+span.hljs-attr {
+  color: var(--catppuccin-foreground) !important;
+}
+span.hljs-string {
+  color: var(--catppuccin-yellow) !important;
+}
+span.hljs-number {
+  color: var(--catppuccin-purple) !important;
+}
+span.hljs-symbol {
+  color: var(--catppuccin-orange) !important;
+}
+span.hljs-meta {
+  color: var(--catppuccin-foreground) !important;
+}
+span.hljs-meta-keyword {
+  color: var(--catppuccin-pink) !important;
+}
+span.hljs-meta-string {
+  color: var(--catppuccin-orange) !important;
+}

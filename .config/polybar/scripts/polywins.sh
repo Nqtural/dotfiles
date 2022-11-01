@@ -3,13 +3,23 @@
 
 # SETTINGS {{{ ---
 
-active_text_color="8be9fd"
-active_bg=
-active_underline="8be9fd"
+# Uncomment desired color scheme
+color_scheme="gruvbox"
+#color_scheme="dracula"
+#color_scheme="catpuccin-mocha"
 
-inactive_text_color=
-inactive_bg=
-inactive_underline=
+if [ "$color_scheme" == "gruvbox" ]; then
+    active_text_color="#fabd2f"
+    active_underline="#fabd2f"
+else if [ "$color_scheme" == "dracula" ]; then
+    active_text_color="#ffffa5"
+    active_underline="#ffffa5"
+else if [ "$color_scheme" == "catpuccin-mocha" ]; then
+    active_text_color="#f9e2af"
+    active_underline="#f9e2af"
+fi
+fi
+fi
 
 separator="·"
 show="window_class" # options: window_title, window_class, window_classname

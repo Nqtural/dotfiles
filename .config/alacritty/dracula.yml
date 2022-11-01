@@ -1,0 +1,126 @@
+# Gruvbox Color Scheme
+colors:
+  primary:
+    background: '#1d2021'
+    foreground: '#ebdbb2'
+    bright_foreground: '#e3e3e3'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#282828'
+      background: '#98971a'
+    focused_match:
+      foreground: '#282828'
+      background: '#d65d0e'
+    footer_bar:
+      background: '#282828'
+      foreground: '#e3e3e3'
+  hints:
+    start:
+      foreground: '#282828'
+      background: '#fabd2f'
+    end:
+      foreground: '#fabd2f'
+      background: '#282828'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#282828'
+  normal:
+    black: '#1d2021'
+    red: '#cc241d'
+    green: '#98971a'
+    yellow: '#d79921'
+    blue: '#458588'
+    magenta: '#b16286'
+    cyan: '#689d6a'
+    white: '#ebdbb2'
+  bright:
+    black: '#3c3836'
+    red: '#fb4934'
+    green: '#b8bb26'
+    yellow: '#fabd2f'
+    blue: '#83a598'
+    magenta: '#d3869b'
+window:
+  padding:
+    x: 20
+    y: 20
+
+  opacity: 0.9
+
+font:
+  normal:
+    style: Regular
+    #family: FiraCode Nerd Font Mono
+    #family: Jetbrains Mono
+    #family: DejaVu Sans Mono
+    #family: Source Code Pro
+    family: CaskaydiaCove Nerd Font Mono
+  size: 10
+
+cursor:
+  style:
+    # Available: Beam, Block, Underline
+    shape: Beam
+    blinking: On
+    blink-interval: 450
+
+# Dracula Color Scheme
+colors:
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+    bright_foreground: '#ffffff'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+    footer_bar:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+  hints:
+    start:
+      foreground: '#282a36'
+      background: '#f1fa8c'
+    end:
+      foreground: '#f1fa8c'
+      background: '#282a36'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '#44475a'
+  normal:
+    black: '#21222c'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'
+  bright:
+    black: '#6272a4'
+    red: '#ff6e6e'
+    green: '#69ff94'
+    yellow: '#ffffa5'
+    blue: '#d6acff'
+    magenta: '#ff92df'
