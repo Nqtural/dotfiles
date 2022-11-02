@@ -126,7 +126,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 alias ralgs="python3 ~/coding/python/ralgs/main.py"
-alias passphrase="python3 ~/coding/python/passphrase-generator/main-py"
+alias passphrase="python3 ~/coding/python/passphrase-generator/main.py"
 alias l="exa --icons --no-time --no-user -al"
 alias ls="exa --icons"
 alias la="exa --icons -a"
