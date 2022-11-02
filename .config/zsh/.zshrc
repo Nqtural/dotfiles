@@ -132,6 +132,7 @@ alias ls="exa --icons"
 alias la="exa --icons -a"
 alias tree="exa --icons -a -tree"
 
+alias cmatrix="cmatrix -boau1"
 alias n="newsboat"
 alias pyoverlay="python3 ~/coding/python/PyOverlay/PyOverlay.py"
 
