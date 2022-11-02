@@ -19,8 +19,25 @@ by Miguel Avila
 */
 
 :root {
+  /* Uncomment desired color scheme */
+
+  /* Gruvbox */
+  
+  --sfwindow: #1d2021;
+  --sfsecondary: #282828;
+  
+
+  /* Dracula */
+  /*
   --sfwindow: #282b36;
   --sfsecondary: #44475a;
+  */
+
+  /* Catppuccin Mocha */
+  /*
+  --sfwindow: #1e1e2e;
+  --sfsecondary: #44475a;
+  */
 }
 
 /* Urlbar View */
@@ -61,6 +78,9 @@ by Miguel Avila
 #navigator-toolbox {
   background-color: var(--sfwindow) !important;
 }
+
+/* Page loading color */
+#tabbrowser-tabpanels{ background: var(--sfsecondary) !important }
 
 /* Window colors  */
 :root {

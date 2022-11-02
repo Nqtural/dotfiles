@@ -20,6 +20,7 @@ const CONFIG = {
     imageBackground: false,
     openInNewTab: true,
     twelveHourFormat: false,
+    iconColor: 'gruvbox', // Available: gruvbox dracula catppuccin-mocha
 
     // Greetings
     greetingMorning: 'Good morning,',

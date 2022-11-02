@@ -20,13 +20,31 @@
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
-  /* Fonts Color */
-  --fg: #f8f8f2; /* Foreground color */
+  /* Uncomment desired color scheme */
 
-  /* Light Colors  */
-  --accent: #bd93f9; /* Hover color */
-  --background: #282a36; /* Background color */
-  --cards: #44475a; /* Cards color */
+  /* Gruvbox */
+  
+  --fg: #ebdbb2;
+  --accent: #d3869b;
+  --background: #282828;
+  --cards: #3c3836;
+  
+
+  /* Dracula */
+  /*
+  --fg: #f8f8f2;
+  --accent: #bd93f9;
+  --background: #282a36;
+  --cards: #44475a;
+  */
+
+  /* Catppuccin Mocha */
+  /*
+  --fg: #1e1e2e;
+  --accent: #f5c2e7;
+  --background: #f9e2ar;
+  --cards: #45475a;
+  */
 
   /* Image background  */
   --imgbg: url(assets/background.jpg); /* Image URL */

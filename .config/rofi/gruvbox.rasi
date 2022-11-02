@@ -13,5 +13,5 @@
     color-yel: #fabd2f;
     color-bor: #689d6a;
 
-    font: "Jetbrains Mono 12";
+    font: "Fira Code Nerd Font Mono 12";
 }
