@@ -1,0 +1,8 @@
+# Catppuccin Theme
+client.focused          #b4befe #b4befe #cdd6f4 #b4befe #b4befe
+client.focused_inactive #5f5faf #b4befe #cdd6f4 #b4befe #5f5faf
+client.unfocused        #5f5faf #b4befe #cdd6f4 #b4befe #5f5faf
+client.urgent           #f9e2af #f9e2af #cdd6f4 #f9e2af #f9e2af
+client.placeholder      #181825 #181825 #cdd6f4 #181825 #181825
+
+client.background       #cdd6f4

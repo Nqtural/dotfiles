@@ -1,0 +1,141 @@
+# Keybindings for i3wm
+
+# Applications
+bindsym $mod+Return exec alacritty
+bindsym $mod+b exec qutebrowser
+bindsym $mod+Shift+b exec firefox
+bindsym $mod+d exec "rofi -show drun"
+bindsym $mod+o exec "alacritty -o colors.primary.background=\'#000000\' -o window.opacity=0.6 --class PyOverlay --command python3 $HOME/coding/python/PyOverlay/PyOverlay.py"
+
+
+
+# Window control
+# Switch focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Hoover mouse over windows to focus them
+focus_follows_mouse yes
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Resize
+bindsym $mod+Control+h resize shrink width 20 px or 20 ppt
+bindsym $mod+Control+j resize grow height 20 px or 20 ppt
+bindsym $mod+Control+k resize shrink height 20 px or 20 ppt
+bindsym $mod+Control+l resize grow width 20 px or 20 ppt
+
+bindsym $mod+Control+Mod1+h resize shrink width 10 px or 10 ppt
+bindsym $mod+Control+Mod1+j resize grow height 10 px or 10 ppt
+bindsym $mod+Control+Mod1+k resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+Mod1+l resize grow width 10 px or 10 ppt
+
+# Switch workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# Move focused winow to dofferent workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Gap control
+bindsym $mod+plus gaps inner current plus 5
+bindsym $mod+minus gaps inner current minus 5
+
+bindsym $mod+Mod1+plus gaps outer current plus 5
+bindsym $mod+Mod1+minus gaps outer current minus 5
+
+# Open next new window to the right of focused window (default)
+bindsym $mod+c split h
+
+# Open next new window below focused window
+bindsym $mod+v split v
+
+# Toggle fullscreen for focused window
+bindsym $mod+f fullscreen toggle
+
+# Toggle tiling/floating for focused window
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling/floating windows
+bindsym $mod+space focus mode_toggle
+
+# Close windows
+bindsym $mod+Shift+q kill
+
+
+
+# Screenshots
+# Save to disk
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+
+# Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip-selection clipboard -t image/png
+
+
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up 10
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down 10
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym XF86AudioMicMute exec --no-startup-id pulseaudio-ctl mute-input
+
+
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
+
+# Misc
+# Show/hide mpv
+bindsym $mod+Tab [class="mpv"] scratchpad show
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'"
+
+
+
+# Power menu
+bindsym XF86PowerOff exec rofi -show p -modi p:rofi-power-menu

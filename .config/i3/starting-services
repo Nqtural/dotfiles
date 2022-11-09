@@ -1,0 +1,32 @@
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill --no-fehbg $HOME/Pictures/wallpapers/catppuccin.png
+
+# To be able to bind the power key to something
+exec --no-startup-id systemd-inhibit --what=handle-power-key sleep infinity
+
+# Compositor
+exec_always --no-startup-id picom --vsync
+
+# Change 'set-prop value' to whatever is your mouse
+# Remove mouse acceleration
+exec_always --no-startup-id xinput set-prop 9 'libinput Accel Speed' -1
+
+# Lower mouse sensitivity
+exec_always --no-startup-id xinput set-prop 9 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+
+# Set display resolution and refresh rate
+exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 60.00
+
+# Set keyboard layout
+exec_always --no-startup-id setxkbmap -layout se
+
+# Remove screensaver/blackening
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset -dpms
+exec_always --no-startup-id xset s noblank
+
+
+
+# To start spotifyd daemon, edit '~/.config/i3/spotify-info' and add your username on line 1 and password
+# on line 2 and restart i3
+exec_always spotifyd -u $(sed -n 1p $HOME/.config/i3/spotify-info) -p $(sed -n 2p $HOME/.config/i3/spotify-info)
