@@ -25,6 +25,6 @@ cursor:
 # Colors:
 import:
   # uncomment the colorscheme you want below:
-#  - ~/.config/alacritty/catppuccin-mocha.yml
-  - ~/.config/alacritty/gruvbox.yml
+#  - ~/.config/alacritty/gruvbox.yml
 #  - ~/.config/alacritty/dracula.yml
+  - ~/.config/alacritty/catppuccin-mocha.yml

@@ -12,7 +12,10 @@ for_window [title="mpv"] border none
 for_window [class="mpv"] move scratchpad; scratchpad show
 
 # Colors
+#include colors.gruvbox
+#include colors.dracula
 include colors.catppuccin-mocha
+
 
 # Starting services
 include starting-services

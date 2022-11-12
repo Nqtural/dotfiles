@@ -1,6 +1,6 @@
-@import "~/.config/rofi/gruvbox.rasi"
+/*@import "~/.config/rofi/gruvbox.rasi"*/
 /*@import "~/.config/rofi/dracula.rasi"*/
-/*@import "~/.config/rofi/catpuccin-mocha.rasi"*/
+@import "~/.config/rofi/catppuccin-mocha.rasi"
 
 /*
    =====================
