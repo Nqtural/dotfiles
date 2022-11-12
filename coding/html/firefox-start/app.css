@@ -23,12 +23,12 @@
   /* Uncomment desired color scheme */
 
   /* Gruvbox */
-  
+  /*
   --fg: #ebdbb2;
   --accent: #d3869b;
   --background: #282828;
   --cards: #3c3836;
-  
+  */
 
   /* Dracula */
   /*
@@ -39,12 +39,12 @@
   */
 
   /* Catppuccin Mocha */
-  /*
-  --fg: #1e1e2e;
-  --accent: #f5c2e7;
-  --background: #f9e2ar;
-  --cards: #45475a;
-  */
+  
+  --fg: #cdd6f4;
+  --accent: #cba6f7;
+  --background: #1e1e2e;
+  --cards: #313244;
+  
 
   /* Image background  */
   --imgbg: url(assets/background.jpg); /* Image URL */

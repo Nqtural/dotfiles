@@ -22,10 +22,10 @@ by Miguel Avila
   /* Uncomment desired color scheme */
 
   /* Gruvbox */
-  
+  /*
   --sfwindow: #1d2021;
   --sfsecondary: #282828;
-  
+  */
 
   /* Dracula */
   /*
@@ -34,10 +34,10 @@ by Miguel Avila
   */
 
   /* Catppuccin Mocha */
-  /*
+  
   --sfwindow: #1e1e2e;
   --sfsecondary: #44475a;
-  */
+  
 }
 
 /* Urlbar View */
