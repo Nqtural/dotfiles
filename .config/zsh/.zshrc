@@ -120,21 +120,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Personal aliases
 # For a full list of active aliases, run `alias`.
-#
-alias ralgs="python3 ~/coding/python/ralgs/main.py"
-alias passphrase="python3 ~/coding/python/passphrase-generator/main.py"
-alias l="exa --icons --no-time --no-user -al"
-alias ls="exa --icons"
-alias la="exa --icons -a"
-alias tree="exa --icons -a -tree"
-
-alias cmatrix="cmatrix -boau1"
-alias n="newsboat"
-alias pyoverlay="python3 ~/coding/python/PyOverlay/PyOverlay.py"
+source $HOME/.config/zsh/aliases.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

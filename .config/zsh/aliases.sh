@@ -1,0 +1,1 @@
+/home/nqtural/.config/zsh/aliases.sh
