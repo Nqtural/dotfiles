@@ -9,10 +9,9 @@ exec_always --no-startup-id picom --vsync
 
 # Change 'set-prop value' to whatever is your mouse
 # Remove mouse acceleration
-exec_always --no-startup-id xinput set-prop 9 'libinput Accel Speed' -1
 
 # Lower mouse sensitivity
-exec_always --no-startup-id xinput set-prop 9 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+exec_always --no-startup-id xinput set-prop "Glorious Model O Wireless" 290 -0.9
 
 # Set display resolution and refresh rate
 exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 144.00
