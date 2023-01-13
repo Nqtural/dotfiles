@@ -122,6 +122,9 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 # Misc
+# Fix mouse acceleration speed after replugging it
+bindsym $mod+F12 exec xinput set-prop "Glorious Model O Wireless" "libinput Accel Speed" -0.9
+
 # Show/hide mpv
 bindsym $mod+Tab [class="mpv"] scratchpad show
 
