@@ -1,5 +1,5 @@
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill --no-fehbg $HOME/Pictures/wallpapers/catppuccin.png
+exec_always --no-startup-id feh --bg-fill --no-fehbg $HOME/Pictures/wallpapers/catppuccin/Bridge.jpg
 
 # To be able to bind the power key to something
 exec --no-startup-id systemd-inhibit --what=handle-power-key sleep infinity
