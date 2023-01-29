@@ -1,0 +1,40 @@
+# Restart sxhkd
+super + shift + r
+    kill $(pidof sxhkd) && sxhkd &
+
+# Open Firefox
+super + b
+    firefox
+
+# Volume
+# Up:
+XF86AudioRaiseVolume
+    pulseaudio-ctl up 2 && kill -35 $(pidof dwmblocks)
+# Down:
+XF86AudioLowerVolume
+    pulseaudio-ctl down 2 && kill -35 $(pidof dwmblocks)
+# Toggle Mute:
+XF86AudioMute
+    pulseaudio-ctl mute && kill -35 $(pidof dwmblocks)
+
+# Media
+# Play/Pause:
+XF86AudioPlay
+    playerctl play-pause
+# Next:
+XF86AudioNext
+    playerctl next
+# Previous:
+XF86AudioPrev
+    playerctl previous
+
+# Keyboard brightness
+# UP:
+super + button4
+    $HOME/dwmblocks/scripts/keyboardbrightness.sh 5 up && kill -36 $(pidof dwmblocks)
+# Down:
+super + button5
+    $HOME/dwmblocks/scripts/keyboardbrightness.sh 5 down && kill -36 $(pidof dwmblocks)
+# Set to 0:
+super + button2
+    $HOME/dwmblocks/scripts/keyboardbrightness.sh 0 && kill -36 $(pidof dwmblocks)

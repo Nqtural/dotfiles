@@ -132,3 +132,4 @@ export PATH="$PATH:$HOME/.local/share/cargo/bin"
 
 # Autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#585b70'
