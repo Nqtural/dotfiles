@@ -1,3 +1,13 @@
+/*
+                    .o88o.  o8o
+                    888 `"  `"'
+oooo d8b  .ooooo.  o888oo  oooo
+`888""8P d88' `88b  888    `888
+ 888     888   888  888     888
+ 888     888   888  888     888
+d888b    `Y8bod8P' o888o   o888o
+*/
+
 /*@import "~/.config/rofi/gruvbox.rasi"*/
 /*@import "~/.config/rofi/dracula.rasi"*/
 @import "~/.config/rofi/catppuccin-mocha.rasi"

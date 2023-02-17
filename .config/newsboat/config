@@ -1,3 +1,11 @@
+#                                                    .o8                               .
+#                                                   "888                             .o8
+#   ooo. .oo.    .ooooo.  oooo oooo    ooo  .oooo.o  888oooo.   .ooooo.   .oooo.   .o888oo
+#   `888P"Y88b  d88' `88b  `88. `88.  .8'  d88(  "8  d88' `88b d88' `88b `P  )88b    888
+#    888   888  888ooo888   `88..]88..8'   `"Y88b.   888   888 888   888  .oP"888    888
+#    888   888  888    .o    `888'`888'    o.  )88b  888   888 888   888 d8(  888    888 .
+#   o888o o888o `Y8bod8P'     `8'  `8'     8""888P'  `Y8bod8P' `Y8bod8P' `Y888""8o   "888"
+
 #prepopulate-query-feeds yes
 
 #show-read-feeds no
