@@ -51,3 +51,9 @@ set $ws10 "10"
 
 # Bar
 exec_always ./.config/polybar/launch.sh
+
+
+
+# To start spotifyd daemon, edit '~/Documents/spotify-info' and add
+# your username on line 1 and password on line 2 and restart i3
+exec_always spotifyd -u $(sed -n 1p $HOME/Documents/spotify-info) -p $(sed -n 2p $HOME/Documents/spotify-info)
