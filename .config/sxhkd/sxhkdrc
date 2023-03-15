@@ -7,31 +7,75 @@
 #   8""888P' o88'   888o o888o o888o o888o o888o `Y8bod88P"
 
 # Restart sxhkd
-super + shift + r
+super + control + shift + r
     kill $(pidof sxhkd) && sxhkd &
 
-# Open Firefox
+# Applications
+# Firefox
 super + b
     firefox
+# Alacritty
+super + Return
+    alacritty
+# Rofi
+super + d
+    rofi -show drun
+# PyOverlay
+super + o
+    alacritty -o colors.primary.background=\'#000000\' -o window.opacity=0.6 --class PyOverlay --command python $HOME/coding/python/PyOverlay/PyOverlay.py
 
-# Volume
-# Up:
+# -- Volume --
+# Up
 XF86AudioRaiseVolume
     pulseaudio-ctl up 2 && kill -35 $(pidof dwmblocks)
-# Down:
+# Down
 XF86AudioLowerVolume
     pulseaudio-ctl down 2 && kill -35 $(pidof dwmblocks)
-# Toggle Mute:
+# Toggle Mute
 XF86AudioMute
     pulseaudio-ctl mute && kill -35 $(pidof dwmblocks)
 
-# Media
-# Play/Pause:
+# -- Media --
+# Play/Pause
 XF86AudioPlay
     playerctl play-pause && kill -36 $(pidof dwmblocks)
-# Next:
+# Next
 XF86AudioNext
     playerctl next && kill -36 $(pidof dwmblocks)
-# Previous:
+# Previous
 XF86AudioPrev
     playerctl previous && kill -36 $(pidof dwmblocks)
+
+# -- Screenshots --
+# - Save to disk -
+# Full screen
+Print
+    maim "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+# Focused window
+super + Print
+    maim --window $(xdotool getactivewindow) "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+# Select
+shift + Print
+    maim --select "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+# - Save to clipboard -
+# Full screen
+control + Print
+    maim | xclip -sel c -t image/png
+# Focused window
+control + super + Print
+    maim --window $(xdotool getactivewindow) | xclip -sel c -t image/png
+# Select
+control + shift Print
+    maim --select | xclip -sel c -t image/png 
+
+# -- Power menu --
+XF86PowerOff
+    rofi -show p -modi p:rofi-power-menu
+
+# -- Show alternative center module --
+# Cava
+super + BackSpace
+    kill $(pidof polybar) && polybar audio
+# Polywins
+super + shift + BackSpace
+    kill $(pidof polybar) && polybar main
