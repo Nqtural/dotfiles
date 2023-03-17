@@ -37,6 +37,9 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
+# Set terminal
+export TERM=kitty
+
 # wget custom hsts for XDG
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 
@@ -141,3 +144,6 @@ export PATH="$PATH:$HOME/.local/share/cargo/bin"
 # Autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#585b70'
+
+# Shell insult
+precmd() { $HOME/.config/zsh/response.sh $? }

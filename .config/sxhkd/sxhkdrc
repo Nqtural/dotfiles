@@ -14,9 +14,9 @@ super + control + shift + r
 # Firefox
 super + b
     firefox
-# Alacritty
+# Terminal
 super + Return
-    alacritty
+    kitty
 # Rofi
 super + d
     rofi -show drun
