@@ -25,6 +25,9 @@ dwmblocks &
 # Shortcut handeling
 sxhkd &
 
+# Notification handeling
+dunst &
+
 # Disable default behaviour of power button
 systemd-inhabit --what=handle-power-key sleep infinity
 

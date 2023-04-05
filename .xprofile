@@ -19,6 +19,9 @@ spotifyd -u $(sed -n 1p $HOME/.config/i3/spotify-info) -p $(sed -n 2p $HOME/.con
 # Shortcut handeling
 sxhkd &
 
+# Notification handeling
+dunst &
+
 # Disable default behaviour of power button
 systemd-inhabit --what=handle-power-key sleep infinity
 
