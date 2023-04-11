@@ -1,63 +1,10 @@
-/* 
-┌─┐┬┌┬┐┌─┐┬  ┌─┐
-└─┐││││├─┘│  ├┤ 
-└─┘┴┴ ┴┴  ┴─┘└─┘
-┌─┐┌─┐─┐ ┬      
-├┤ │ │┌┴┬┘      
-└  └─┘┴ └─
-
-by Miguel Avila
-
-*/
-
-/*
- 
-┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
-│  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
-└─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
-
-*/
-
 :root {
-  /* Uncomment desired color scheme */
-
-  /* Gruvbox */
-  /*
-  --sfwindow: #1d2021;
-  --sfsecondary: #282828;
-  */
-
-  /* Dracula */
-  /*
-  --sfwindow: #282b36;
-  --sfsecondary: #44475a;
-  */
-
-  /* Catppuccin Mocha */
+  /* Colors */
   
   --sfwindow: #1e1e2e;
-  --sfsecondary: #44475a;
+  --sfsecondary: #313244;
   
 }
-
-/* Urlbar View */
-
-/*─────────────────────────────*/
-/* Comment this section if you */
-/* want to show the URL Bar    */
-/*─────────────────────────────*/
-
-.urlbarView {
-  display: none !important;
-}
-
-/*─────────────────────────────*/
-
-/* 
-┌─┐┌─┐┬  ┌─┐┬─┐┌─┐
-│  │ ││  │ │├┬┘└─┐
-└─┘└─┘┴─┘└─┘┴└─└─┘ 
-*/
 
 /* Tabs colors  */
 #tabbrowser-tabs:not([movingtab])
@@ -80,7 +27,9 @@ by Miguel Avila
 }
 
 /* Page loading color */
-#tabbrowser-tabpanels{ background: var(--sfsecondary) !important }
+#tabbrowser-tabpanels{
+    background: var(--sfsecondary) !important;
+}
 
 /* Window colors  */
 :root {
@@ -96,24 +45,11 @@ by Miguel Avila
   background-color: var(--sfwindow) !important;
 }
 
-/* 
-
-┌┬┐┌─┐┬  ┌─┐┌┬┐┌─┐            
- ││├┤ │  ├┤  │ ├┤             
-─┴┘└─┘┴─┘└─┘ ┴ └─┘            
-┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐
-│  │ ││││├─┘│ ││││├┤ │││ │ └─┐
-└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
-
-*/
+/* Remove components */
 
 /* Tabs elements  */
 .tab-close-button {
   display: none;
-}
-
-.tabbrowser-tab:not([pinned]) .tab-icon-image {
-  display: none !important;
 }
 
 #nav-bar:not([tabs-hidden='true']) {
@@ -127,7 +63,7 @@ by Miguel Avila
 }
 
 :root {
-  --toolbarbutton-border-radius: 0 !important;
+  --toolbarbutton-border-radius: 6 !important;
   --tab-border-radius: 0 !important;
   --tab-block-margin: 0 !important;
 }
@@ -147,10 +83,6 @@ by Miguel Avila
   padding-inline-end: 0 !important;
 }
 
-#tabs-newtab-button {
-  padding-left: 0 !important;
-}
-
 /* URL bar */
 /* Hide "Firefox view" */
 #firefox-view-button {
@@ -158,9 +90,13 @@ by Miguel Avila
 }
 
 #tabbrowser-tabs {
-  margin-left: 1px !important;
   border: 0 !important;
   padding: 0 !important;
+  margin: 0 !important;
+}
+
+.tabbrowser-tab {
+    padding: 0 !important;
 }
 
 /* Hide statuspanel label (box in lower left corner when hovering over link) */
@@ -204,10 +140,13 @@ by Miguel Avila
   border: none !important;
 }
 
-/* Bookmarks bar  */
-.bookmark-item .toolbarbutton-icon {
-  display: none;
+/* Clean up bookmarks */
+.bookmarks-actions-menuseparator, .openintabs-menuitem,
+#unified-extensions-view > toolbarseparator:nth-child(2) {
+    display: none;
 }
+
+/* Bookmarks bar  */
 toolbarbutton.bookmark-item:not(.subviewbutton) {
   min-width: 1.6em;
 }
