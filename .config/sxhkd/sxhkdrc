@@ -6,10 +6,6 @@
 #   o.  )88b  .o8"'88b    888   888   888 `88b.  888   888
 #   8""888P' o88'   888o o888o o888o o888o o888o `Y8bod88P"
 
-# Restart services
-super + control + shift + r; {s, d}
-    kill $(pidof {sxhkd, dunst}) && {sxhkd, dunst} & notify-send "sxhkd:" "restarted service"
-
 # -- Applications --
 # Firefox
 super + b
