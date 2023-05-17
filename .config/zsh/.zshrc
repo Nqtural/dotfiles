@@ -33,7 +33,6 @@ export ZSH="${XDG_DATA_HOME}/oh-my-zsh"
 export WINEPREFIX="${XDG_DATA_HOME}/wine"
 export XAUTHORITY="${XDG_RUNTIME_DIR}/Xauthority"
 export HISTFILE="${XDG_STATE_HOME}/zsh/history"
-export _JAVA_OPTIONS="-Djava.util.prefs.userRoot='${XDG_CONFIG_HOME}/java'"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
 export ANDROID_HOME="${XDG_DATA_HOME}/android"
 export XINITRC="${XDG_CONFIG_HOME}/X11/xinitrc"
@@ -153,3 +152,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#585b70'
 
 # Shell insult
 precmd() { $HOME/.config/zsh/response.sh $? }
+
+# Add .local/bin to path
+export PATH=$PATH:/home/nqtural/.local/bin
