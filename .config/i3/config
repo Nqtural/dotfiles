@@ -18,6 +18,9 @@ for_window [title="mpv"] border none
 # Open MPV as scratchpad
 for_window [class="mpv"] move scratchpad; scratchpad show
 
+# Make Minecraft "Updating files" window floating
+for_window [class="minecraft-launcher"] floating enable
+
 # Colors
 #include colors.gruvbox
 #include colors.dracula
