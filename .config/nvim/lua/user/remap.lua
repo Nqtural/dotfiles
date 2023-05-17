@@ -1,11 +1,8 @@
 -- Set leader key
 vim.g.mapleader = " "
 
--- Open file finder
-vim.keymap.set("n", "<leader>o", vim.cmd.Ex)
-
--- Leader + t toggles Nvim Tree
-vim.keymap.set("n", "<leader>t", vim.cmd.NvimTreeToggle)
+-- Open file explorer
+vim.keymap.set("n", "<leader>o", vim.cmd.NvimTreeToggle)
 
 -- Move lines in visual mode with K and J
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
