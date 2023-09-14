@@ -1,8 +1,11 @@
 -- Set leader key
 vim.g.mapleader = " "
 
--- Open file explorer
+-- NvimTree
 vim.keymap.set("n", "<leader>o", vim.cmd.NvimTreeToggle)
+
+-- Undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- Move lines in visual mode with K and J
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -13,6 +16,7 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Make search terms stay in the middle
 vim.keymap.set("n", "n", "nzzzv")
+
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Yank to system clipboard
@@ -38,3 +42,19 @@ vim.keymap.set("v", ">", ">gv")
 
 -- Don't write to clipboard when pasting over selection
 vim.keymap.set("v", "p", "_dP")
+
+-- Deselect in visual modes
+vim.keymap.set("v", "<leader>d", "<Esc>V")
+
+-- Toggle line numbers
+vim.keymap.set("n", "<leader>n", ":set nu! rnu!<CR>")
+vim.keymap.set("n", "<leader>N", ":set nu! nu?<CR>")
+vim.keymap.set("n", "<leader>rN", ":set rnu! rnu?CR>")
+
+-- Write and quit
+vim.keymap.set("n", "<leader>wq", ":wqa<CR>")
+
+-- Split window
+vim.keymap.set("n", "<leader>sh", ":split<CR>")
+vim.keymap.set("n", "<leader>sv", ":vsplit<CR>")
+vim.keymap.set("n", "<leader>sq", ":only<CR>")
