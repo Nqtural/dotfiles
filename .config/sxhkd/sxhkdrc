@@ -6,16 +6,26 @@
 #   o.  )88b  .o8"'88b    888   888   888 `88b.  888   888
 #   8""888P' o88'   888o o888o o888o o888o o888o `Y8bod88P"
 
+# -- Restart --
+super + control + r
+    pkill sxhkd && sxhkd && notify-send " Restarted sxhkd"
+
 # -- Applications --
 # Firefox
 super + b
     firefox-developer-edition
 # Terminal
 super + Return
+    kitty
+# Secondary terminal
+super + shift + Return
     alacritty
 # Rofi
 super + d
     rofi -show drun
+# PcManFM
+super + e
+    pcmanfm
 # PyOverlay
 super + o
     alacritty -o colors.primary.background=\'#000000\' -o window.opacity=0.6 --class PyOverlay --command python $HOME/coding/python/PyOverlay/PyOverlay.py
@@ -34,44 +44,39 @@ XF86AudioMute
 # -- Media --
 # Play/Pause
 XF86AudioPlay
-    playerctl play-pause && kill -36 $(pidof dwmblocks)
+    media-control.sh play-pause
 # Next
 XF86AudioNext
-    playerctl next && kill -36 $(pidof dwmblocks)
+    media-control.sh next
 # Previous
 XF86AudioPrev
-    playerctl previous && kill -36 $(pidof dwmblocks)
+    media-control.sh previous
 
 # -- Screenshots --
 # - Save to disk -
 # Full screen
 Print
-    maim "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+    maim "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png" && notify-send " Screenshot saved"
 # Focused window
 super + Print
-    maim --window $(xdotool getactivewindow) "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+    maim --window $(xdotool getactivewindow) "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png" && notify-send " Screenshot saved"
 # Select
 shift + Print
-    maim --select "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png"
+    maim --select "$HOME/Pictures/screenshots/$(date +%d-%m-%y_%H-%M-%S).png" && notify-send " Screenshot saved"
 # - Save to clipboard -
 # Full screen
 control + Print
-    maim | xclip -sel c -t image/png
+    maim | xclip -sel c -t image/png && notify-send " Screenshot copied"
 # Focused window
 control + super + Print
-    maim --window $(xdotool getactivewindow) | xclip -sel c -t image/png
+    maim --window $(xdotool getactivewindow) | xclip -sel c -t image/png && notify-send " Screenshot copied"
 # Select
-control + shift Print
-    maim --select | xclip -sel c -t image/png 
+control + shift + Print
+    maim --select | xclip -sel c -t image/png && notify-send " Screenshot copied"
+# Display shortcuts
+super + control + shift + Print
+    notify-send "Screenshot keybinds:" "Mod: Current window\nShift: Select area\nControl: Copy image"
 
 # -- Power menu --
 XF86PowerOff
     rofi -show p -modi p:rofi-power-menu
-
-# -- Show alternative center module --
-# Cava
-super + BackSpace
-    kill $(pidof polybar) && polybar audio
-# Polywins
-super + shift + BackSpace
-    kill $(pidof polybar) && polybar main
