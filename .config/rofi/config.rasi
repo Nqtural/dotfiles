@@ -22,8 +22,8 @@ configuration {
     modi: "drun";
     font: "FiraCode Nerd Font Mono 12";
 /*	locolorion: 0;*/
-/*	yoffset: 0;*/
-/*	xoffset: 0;*/
+	yoffset: -277;
+	xoffset: 0;
 	fixed-num-lines: true;
 	show-icons: false;
 	terminal: "alacritty";
@@ -171,7 +171,7 @@ configuration {
 
 #window {
     background-color: @color-bgd;
-    border: 3;
+    border: 0;
     border-radius: 0;
     border-color: @color-bor;
     padding: 5;
