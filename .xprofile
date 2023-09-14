@@ -2,7 +2,12 @@
 exec picom --vsync &
 
 # Wallpaper
-feh --no-fehbg --bg-fill /home/nqtural/Pictures/astolfo_wp/astolfo_crust.png
+# Powerlines
+#feh --no-fehbg --bg-fill /home/nqtural/Pictures/wallpapers/powerlines-catppuccin.png
+# Freedom
+#feh --no-fehbg --bg-fill /home/nqtural/Pictures/wallpapers/freedom.png
+# 88br Derbi
+feh --no-fehbg --bg-fill /home/nqtural/Pictures/88br-derbi/88br-derbi-catppuccin-colorless.jpeg
 
 # Keyboard layout
 setxkbmap -layout se
@@ -14,13 +19,16 @@ xrandr --output DP-2 --mode 1920x1080 --rate 144.00
 xinput set-prop "Glorious Model O Wireless" "libinput Accel Speed" -1
 
 # Start spotifyd
-spotifyd -u $(sed -n 1p $HOME/.config/i3/spotify-info) -p $(sed -n 2p $HOME/.config/i3/spotify-info)
+#spotifyd -u $(sed -n 1p $HOME/.config/i3/spotify-info) -p $(sed -n 2p $HOME/.config/i3/spotify-info)
 
 # Shortcut handeling
 sxhkd &
 
 # Notification handeling
 dunst &
+
+# Borders
+xborders -c ~/.config/xborders/config.json &
 
 # Disable default behaviour of power button
 systemd-inhabit --what=handle-power-key sleep infinity
@@ -32,3 +40,6 @@ xrandr --output DP-2 --mode 1920x1080 --rate 144.00
 xset s off
 xset -dpms
 xset s noblank
+
+# Keyboard lighting
+python Coding/python/keyboard/main.py
