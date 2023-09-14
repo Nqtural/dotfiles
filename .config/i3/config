@@ -11,8 +11,10 @@ gaps outer 0
 gaps inner 10
 
 # Borders
-default_floating_border pixel 2
-default_border pixel 2
+#default_floating_border pixel 2
+#default_border pixel 2
+default_floating_border none
+default_border none
 for_window [title="mpv"] border none
 
 # Open MPV as scratchpad
@@ -25,10 +27,6 @@ for_window [class="minecraft-launcher"] floating enable
 #include colors.gruvbox
 #include colors.dracula
 include colors.catppuccin-mocha
-
-
-# Starting services
-include starting-services
 
 # Keybindings
 include keybindings
