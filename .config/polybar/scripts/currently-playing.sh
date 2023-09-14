@@ -1,15 +1,24 @@
-#!/bin/bash
-# Make prioritizing of player commentable
-if [ 1 = 0 ]; then
-    echo
-# Prioritize spotifyd
-#if [ "$(playerctl -p spotifyd status)" = "Playing" ]; then
-#    echo "%{F#313244}|%{F-} %{F#cba6f7}%{F-} $(playerctl -p spotifyd metadata -f "{{artist}} - {{title}}")"
-#elif [ "$(playerctl -p spotifyd status)" = "Paused" ]; then
-#    echo "%{F#313244}|%{F-} %{F#f38ba8}%{F-} $(playerctl -p spotifyd metadata -f "{{artist}} - {{title}}")"
-# Check other players
-elif [ "$(playerctl status)" = "Playing" ]; then
-    echo "%{F#313244}|%{F-} %{F#f38ba8}%{F-} $(playerctl metadata -f "{{artist}} - {{title}}")"
-elif [ "$(playerctl status)" = "Paused" ]; then
-    echo "%{F#313244}|%{F-} %{F#f38ba8}%{F-} $(playerctl metadata -f "{{artist}} - {{title}}")"
-fi
+#!/usr/bin/fish
+# MOC is currently playing
+if [ "$(mocp -i | awk '/^State/{print $2}')" = "PLAY" ];
+    set response "%{F#313244}|%{F-} %{F#74c7ec}%{F-} $(mocp -i | awk '/^Title/{first = $2; $1=""; $2=""; print $0}' | sed "s/^ *//g")"
+# PulseAudio is currently playing
+else if [ "$(playerctl status)" = "Playing" ];
+    set response "%{F#313244}|%{F-} %{F#74c7ec}%{F-} $(playerctl metadata -f "{{artist}} - {{title}}")"
+# MOC is paused
+else if [ "$(mocp -i | awk '/^State/{print $2}')" = "PAUSE" ];
+    set response "%{F#313244}|%{F-} %{F#fab387}%{F-} $(mocp -i | awk '/^Title/{first = $2; $1=""; $2=""; print $0}' | sed "s/^ *//g")"
+# PulseAudio is paused
+else if [ "$(playerctl status)" = "Paused" ];
+    set response "%{F#313244}|%{F-} %{F#fab387}%{F-} $(playerctl metadata -f "{{artist}} - {{title}}")"
+end
+
+if [ (test -n "$response"; echo "$status") = 1 ];
+    echo "%{F#313244}|%{F-} %{F#74c7ec}%{F-} Nothing playing"
+end
+
+if [ (string length "$response") -ge 77 ];
+    echo "$(string sub -l 73 "$response")..."
+else
+    echo "$response"
+end
