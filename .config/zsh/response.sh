@@ -8,7 +8,7 @@ LMFAO u suck
 wow. just wow.
 kekw + ratio + L + bozo
 need help?
-\"spelling are for jews anyway!\"
+spelling are for jews anyway!
 jew
 you dumb jew
 you stupid nigger
