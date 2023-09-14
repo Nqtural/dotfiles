@@ -10,6 +10,7 @@
 
 #show-read-feeds no
 auto-reload yes
+max-items 100
 
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
@@ -54,12 +55,31 @@ macro , open-in-browser
 macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser linkhandler
 macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
 macro v set browser "devour mpv" ; open-in-browser ; set browser linkhandler
+macro i set browser "sudo mplayer -vo fbdev -fs -cache 1024 &> log.txt" ; open-in-browser ; set browser linkhandler ;
+macro 1 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 1
+macro 2 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 2
+macro 3 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 3
+macro 4 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 4
+macro 5 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 5
+macro 6 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 6
+macro 7 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 7
+macro 8 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 8
+macro 9 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 9
+macro 0 set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 0
+macro ! set browser "feh" ; goto-url 1
+macro '\"' set browser "$HOME/.config/newsboat/open_image.sh" ; goto-url 2
+macro \# set browser "feh" ; goto-url 3
+macro ¤ set browser "feh" ; goto-url 4
+macro % set browser "feh" ; goto-url 5
+macro & set browser "feh" ; goto-url 6
+macro / set browser "feh" ; goto-url 7
+macro ( set browser "feh" ; goto-url 8
+macro ) set browser "feh" ; goto-url 9
+macro = set browser "feh" ; goto-url 0
 macro w set browser "w3m" ; open-in-browser ; set browser linkhandler
-macro p set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
-macro c set browser "xsel -b <<<" ; open-in-browser ; set browser linkhandler
-macro r set browser "ttrv" ; open-in-browser
+macro p set browser "podboat" ; open-in-browser
 
 # Podboat items
 download-path "~/Downloads/%h/%n"
 max-downloads 3
-player "mpv"
+player "mocp -AT /home/nqtural/.config/moc/themes/theme"
