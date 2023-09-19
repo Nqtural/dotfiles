@@ -7,6 +7,14 @@ vim.keymap.set("n", "<leader>o", vim.cmd.NvimTreeToggle)
 -- Undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+-- Telescope
+vim.keymap.set("n", "<leader>f", ":Telescope find_files<CR>")
+vim.keymap.set("n", "<leader>r", ":Telescope oldfiles<CR>")
+
+-- Commentary
+vim.keymap.set("n", "<leader>c", ":Commentary<CR>")
+vim.keymap.set("v", "<leader>c", ":'<,'>Commentary<CR>")
+
 -- Move lines in visual mode with K and J
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -25,7 +33,7 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- Search and replace current word
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]])
 
 -- Make file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

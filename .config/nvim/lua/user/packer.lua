@@ -25,4 +25,9 @@ return require("packer").startup(function(use)
             require("alpha").setup(require"alpha.themes.startify".config)
         end
     }
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = { "nvim-tree/nvim-web-devicons", opt = true }
+    }
+    use "tpope/vim-commentary"
 end)

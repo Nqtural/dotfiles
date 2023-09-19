@@ -1,6 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd[[autocmd InsertEnter,InsertLeave * set cul!]]
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true

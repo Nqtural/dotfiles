@@ -29,7 +29,7 @@ dashboard.section.header.opts.hl = "Function"
 -- Set menu
 dashboard.section.buttons.val = {
     dashboard.button( "e", "  > new file" , ":ene <BAR> startinsert <CR>"),
-    dashboard.button( "f", "  > find file", "Telescope find_files<CR>"),
+    dashboard.button( "f", "  > find file", ":Telescope find_files<CR>"),
     dashboard.button( "r", "  > recent"   , ":Telescope oldfiles<CR>"),
     dashboard.button( "s", "  > settings" , ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button( "q", "  > quit",      ":qa<CR>"),
