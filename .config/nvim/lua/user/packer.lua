@@ -10,7 +10,8 @@ return require("packer").startup(function(use)
         "nvim-telescope/telescope.nvim",
         requires = { "nvim-lua/plenary.nvim" }
     }
-    use { "catppuccin/nvim", as = "catppuccin" }
+    -- use { "catppuccin/nvim", as = "catppuccin" }
+    use "Mofiqul/dracula.nvim"
     use ("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
     use "nvim-treesitter/playground"
     use "mbbill/undotree"
